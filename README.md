@@ -7,7 +7,13 @@ The platform includes features such as user authentication (including Google Sig
 This project is built using **modern Android development practices** with **Kotlin**, **Firebase**, **Google Books API**, and the **MVVM (Model-View-ViewModel)** architecture.
 
 ---
+## 🎬 Video Demonstration
 
+A video presentation showcasing the app's features is available at the link below:
+
+[**Click here to watch the BookSwap Video Demo**](https://youtu.be/8qZrwkpETB4?si=DxWCpsl4_2y2mrjA)
+
+---
 ## 🧭 Table of Contents
 1. [Core Features](#core-features)  
 2. [Technology Stack & Architecture](#technology-stack--architecture)  

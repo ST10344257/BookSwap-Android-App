@@ -1,0 +1,40 @@
+# Publication Evidence
+
+We have prepared the release build, but a public Play Store listing requires a developer account fee.
+
+---
+
+## 1. Signed APK File
+
+The signed release APK (`app-release.apk`) was generated.
+
+![Signed APK](docs/app-release.png) 
+*(This is the screenshot from your Word doc showing the file)*
+
+---
+
+## 2. Application Screenshots
+
+### Login page with the Google Single Sign-on
+![Login Screen](docs/Single-Sign-On.png)
+
+### Home Screen (showing listed books)
+![Home Screen](docs/Home-Page.jpg)
+
+### Book Detail Screen
+![Book Detail Screen](docs/Book-Detail.jpg)
+
+### Add Book Screen
+![Add Book Screen](docs/ListBook.jpg)
+
+### Profile Screen (Options screen)
+![Profile Screen](docs/Profile-Page.jpg)
+
+### Language Selection Screen
+![Language Screen](docs/Change-Languages.jpg)
+
+### Wishlist Screen
+![Wishlist Screen](docs/Wishlist.jpg)
+
+### Cart Screen
+![Cart Screen](docs/Cart.jpg)

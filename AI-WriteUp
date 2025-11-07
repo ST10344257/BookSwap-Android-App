@@ -1,0 +1,22 @@
+# AI-use Write Up
+---
+
+During the development of the BookSwap application, we encountered several critical errors that did not allow the app to function properly. Using AI it assisted us in systematically debugging these issues by analysing error logs and identifying root causes.
+
+When we faced `PERMISSION_DENIED` errors during book purchases, we initially thought our application code was wrong. The AI, after analyzing the error logs, pointed out that one of the causes was that the transactions were being blocked by our Firestore Security Rules.
+
+Below is the code snippet the AI helped us refine to fix this:
+
+```rules
+// Transactions collection
+match /transactions/{transactionId} {
+  allow read: if request.auth != null && 
+              (request.auth.uid == resource.data.buyerId || 
+               request.auth.uid == resource.data.sellerId);
+  allow create: if request.auth != null &&
+                   request.auth.uid == request.resource.data.buyerId;
+  allow update: if request.auth != null && 
+                  (request.auth.uid == resource.data.buyerId || 
+                   request.auth.uid == resource.data.sellerId);
+  allow delete: if false;
+}
